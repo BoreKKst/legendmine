@@ -84,9 +84,9 @@ def _int(name: str, default: int = 0) -> int:
     return int(v) if v.lstrip("-").isdigit() else default
 
 
-OWNER_TG_IDS = _ids("8994217584")
-ADMIN_TG_IDS = _ids("6506372850")
-ALLOWED_CHAT_IDS = _ids("-1004431650919")
+OWNER_TG_IDS = _ids("OWNER_TG_IDS")
+ADMIN_TG_IDS = _ids("ADMIN_TG_IDS")
+ALLOWED_CHAT_IDS = _ids("ALLOWED_CHAT_IDS")
 
 RCON_HOST = os.getenv("RCON_HOST", "")
 RCON_PORT = _int("RCON_PORT", 25575)
@@ -104,7 +104,7 @@ STAFF_SHEET_NAME = os.getenv("STAFF_SHEET_NAME", "Списки")
 CREDENTIALS_FILE = "credentials.json"
 
 HEALTH_PORT = _int("PORT", 8080)
-WEB_URL = os.getenv("WEB_URL", "") or os.getenv("RENDER_EXTERNAL_URL", "")
+WEB_URL = os.getenv("WEB_URL", "https://legendmine.onrender.com") or os.getenv("RENDER_EXTERNAL_URL", "")
 WEB_SESSION_HOURS = _int("WEB_SESSION_HOURS", 12)
 WEB_LINK_MINUTES = _int("WEB_LINK_MINUTES", 15)
 WEB_ADMINS = {
@@ -112,7 +112,7 @@ WEB_ADMINS = {
     for x in os.getenv("WEB_ADMINS", "HumanLegendary,borekkst").split(",")
     if x.strip()
 }
-WEB_ADMIN_IDS = _ids("6506372850")
+WEB_ADMIN_IDS = _ids("WEB_ADMIN_IDS")
 
 WARNS_FOR_DEMOTION = _int("WARNS_FOR_DEMOTION", 4)
 PROTECTED_FROM_DEMOTION = {"Владелец", "Со-владелец"}
