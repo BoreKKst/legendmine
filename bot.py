@@ -115,20 +115,20 @@ WEB_ADMINS = {
 WEB_ADMIN_IDS = _ids("WEB_ADMIN_IDS")
 
 WARNS_FOR_DEMOTION = _int("WARNS_FOR_DEMOTION", 4)
-PROTECTED_FROM_DEMOTION = {"Владелец", "Со-владелец"}
+PROTECTED_FROM_DEMOTION = {"Владелец проекта", "Со-владелец"}
 
 # ============================================================
 # ШТАТ
 # ============================================================
 ROLE_TO_GROUP = {
-    "Владелец": "owner",
+    "Владелец проекта": "owner",
     "Со-владелец": "coowner",
     "Куратор": "curator",
-    "Ст.администратор": "stadmin",
+    "Ст.Администратор": "stadmin",
     "Администратор": "mladmin",
-    "Ст.модератор": "stmoder",
+    "Ст.Модератор": "stmoder",
     "Модератор": "mlmoder",
-    "Ст.хелпер": "sthelper",
+    "Ст.Хелпер": "sthelper",
     "Хелпер": "helper",
 }
 try:
