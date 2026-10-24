@@ -98,7 +98,7 @@ PTERO_URL = os.getenv("PTERO_URL", "")
 PTERO_API_KEY = os.getenv("PTERO_API_KEY", "")
 PTERO_SERVER_ID = os.getenv("PTERO_SERVER_ID", "")
 
-SPREADSHEET_ID = os.getenv("SPREADSHEET_ID", "")
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID", "1YVdraqATmuITpzWxh3QTLRQKeSGOs_al1D8dAfqlsLM")
 WORKSHEET_NAME = "Учет предупреждений"
 STAFF_SHEET_NAME = os.getenv("STAFF_SHEET_NAME", "Списки")
 CREDENTIALS_FILE = "credentials.json"
